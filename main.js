@@ -28,8 +28,11 @@ function yellLouder(string){
 
 
 function getInitials(string){
-  let x= string.indexOf(' ') + 1;
-  return string[0]+'.'+ string.charAt(x)+'.';
+  let spaceIndex = string.indexOf(' ');
+  if (spaceIndex === -1) {
+    return string[0] + '.'; // one-word name: only one initial
+  }
+  return string[0] + '.' + string[spaceIndex + 1] + '.';
 }
 
 
