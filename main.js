@@ -2,41 +2,41 @@
  * YOUR CODE HERE! *
  *******************/
 
-function yell(string){
-return string + '!';
+function yell(string) {
+  return string + '!';
 }
-function getFirstCharacter(string){
+
+function getFirstCharacter(string) {
   return string[0];
 }
-function getLastCharacter(string){
+
+function getLastCharacter(string) {
   return string[string.length - 1];
 }
-function getOneCharacter(string, num){
-  return string[num];
+
+function getOneCharacter(string, index) {
+  return string[index];
 }
-function getTwoCharacters(string,num,num2){
-  return string[num]+string[num2];
+
+function getTwoCharacters(string, index1, index2) {
+  return string[index1] + string[index2];
 }
-function makeCapitalized(string){
+
+function makeCapitalized(string) {
   return string.toUpperCase();
 }
-function yellLouder(string){
-  return string.toUpperCase()+'!!!';
+
+function yellLouder(string) {
+  return makeCapitalized(string) + '!!!';
 }
 
-
-
-
-function getInitials(string){
+function getInitials(string) {
   let spaceIndex = string.indexOf(' ');
   if (spaceIndex === -1) {
     return string[0] + '.'; // one-word name: only one initial
   }
   return string[0] + '.' + string[spaceIndex + 1] + '.';
 }
-
-
-
 
 /********************************************************************
  * THIS CODE IS FOR INTERNAL USE ONLY. DON'T CHANGE ANYTHING BELOW! *
